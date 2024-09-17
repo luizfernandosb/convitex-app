@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  color: antiquewhite;
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(
+    circle,
+    rgba(128, 0, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+body h1 {
+  font-weight: 100;
+  width: 50%;
+  /* margin-top: 100px; */
+  text-align: center;
+}
+
+span {
+  color: rgb(195, 163, 255);
+  font-weight: bold;
+}
+
+p {
+  color: black;
+}
+
+/* Estilos para os emojis flutuantes */
+.emoji-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: float 5s infinite ease-in-out, zoom 3s infinite ease-in-out;
+  opacity: 0.8;
+}
+
+.emoji:nth-child(1) { top: 10%; left: 20%; }
+.emoji:nth-child(2) { top: 15%; left: 40%; }
+.emoji:nth-child(3) { top: 20%; right: 10%; }
+.emoji:nth-child(4) { bottom: 15%; left: 25%; }
+.emoji:nth-child(5) { bottom: 20%; right: 15%; }
+.emoji:nth-child(6) { bottom: 20%; left: 60%; }
+.emoji:nth-child(7) { top: 20%; right: 35%; }
+.emoji:nth-child(8) { top: 60%; left: 15%; }
+.emoji:nth-child(9) { top: 80%; right: 30%; }
+.emoji:nth-child(10) { bottom: 40%; right: 25%; }
+.emoji:nth-child(11) { bottom: 10%; left: 35%; }
+.emoji:nth-child(12) { top: 10%; right: 45%; }
+
+/* Animação de flutuação */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* Animação de zoom in e zoom out */
+@keyframes zoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
