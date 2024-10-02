@@ -29,8 +29,9 @@ main {
 }
 
 .logo {
-  width: 100px;
+  width: 200px;
   align-self: start;
+  margin-top: -50px;
 }
 
 body h1 {
@@ -143,16 +144,17 @@ p {
 }
 
 .users {
-  margin-top: -80px;
-  width: 130px;
+  margin-top: -100px;
+  width: 200px;
 }
 
 button {
   background-color: #1c0b2c;
   border: 2px solid #d5b5f3;
   outline: none;
-  padding: 10px;
-  width: 150px;
+  padding: 20px 30px;
+  width: 250px;
+  font-size: 1.2rem;
   border-radius: 100px;
   font-weight: bolder;
   color: #d5b5f3;
@@ -211,7 +213,7 @@ section p {
 .card {
   gap: 10px;
   width: 20%;
-  height: 260px;
+  height: 350px;
   background: rgb(128, 0, 255);
   background: linear-gradient(
     180deg,
@@ -229,7 +231,15 @@ section p {
 
 .card p {
   font-weight: 200;
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+.card h3 {
+  font-size: 2rem;
+}
+
+.card span {
+  font-size: 1.4rem;
 }
 
 .card:hover {
